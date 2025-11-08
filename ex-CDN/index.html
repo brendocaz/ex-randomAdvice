@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Atividades</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body> -->
+  <div class="container">
+    <h1>💡 Conselho do Dia</h1>
+    <p class="subtitulo">Precisa de inspiração? Deixe a sabedoria te guiar!</p>
+
+    <div class="card-atividade" id="card-atividade">
+      <p class="atividade" id="texto-atividade">Clique no botão para receber um conselho!</p>
+      <div class="info-atividade" id="info-atividade" style="display: none;">
+        <span class="tag" id="tag-numero">Conselho #<span id="numero-conselho"></span></span>
+      </div>
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Buscando conselho...</p>
+    </div>
+
+    <div class="botoes">
+      <button id="btn-gerar" class="btn-principal">Gerar Conselho</button>
+      <button id="btn-copiar" class="btn-secundario">📋 Copiar</button>
+    </div>
+
+    <div class="contador">
+      <p>Conselhos gerados: <span id="contador">0</span></p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
